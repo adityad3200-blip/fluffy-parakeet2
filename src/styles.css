@@ -1,20 +1,44 @@
 body {
   font-family: Arial, sans-serif;
-  margin: 20px;
+  margin: 0;
+  padding: 0;
   line-height: 1.6;
   background-color: #f9f9f9;
+  color: #333;
 }
 
-h1 {
-  color: #2c3e50;
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
 }
 
-header p {
+header {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #2c3e50;
+  color: #fff;
+}
+
+header .tagline {
   font-style: italic;
 }
 
 section {
-  margin-top: 20px;
+  margin-top: 30px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #2c3e50;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
 }
 
 blockquote {
@@ -22,4 +46,37 @@ blockquote {
   padding-left: 15px;
   border-left: 4px solid #2c3e50;
   color: #555;
+  font-style: italic;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form select {
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.contact-form button {
+  margin-top: 15px;
+  padding: 10px;
+  border: none;
+  background-color: #2c3e50;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #34495e;
 }
